@@ -3,7 +3,7 @@
 ## About
 _calcal_ is a command line application that computes and converts dates from 11 calendars, consisting of the Gregorian, ISO, Julian, Islamic, Hebrew, Mayan (long count, haab, tzolkin), French Revolutionary, and Old Hindu (solar, lunar) calendars.
 
-For the calendrical computations, _calcal_ uses the functions implemented in the Go package [_libcalendar_](https://github.com/staudtlex/libcalendar). For a discussion of the original functions and Lisp code (upon which _libcalcal_ is based), see [Dershowitz, Nachum, and Edward Reingold. 1990. "Calendrical Calculations", Software - Practice and Experience, 20 (9), 899-928](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.4274) and [Reingold, Edward, Nachum Dershowitz, and Stewart Clamen. 1993. "Calendrical Calculations, II: Three Historical Calendars", Software - Practice & Experience, 23 (4), 383-404.](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.9215)
+For the calendrical computations, _calcal_ uses the functions implemented in the Go package [_libcalendar_](https://github.com/staudtlex/libcalendar). For a discussion of the original functions and Lisp code (upon which _libcalendar_ is based), see [Dershowitz, Nachum, and Edward Reingold. 1990. "Calendrical Calculations", Software - Practice and Experience, 20 (9), 899-928](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.4274) and [Reingold, Edward, Nachum Dershowitz, and Stewart Clamen. 1993. "Calendrical Calculations, II: Three Historical Calendars", Software - Practice & Experience, 23 (4), 383-404.](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.9215)
 
 ## Installing
 ```
@@ -63,7 +63,7 @@ Usage of calcal:
 ```
 
 ## Limitations
-_calcal_ currently only supports converting _Gregorian calendar dates_ into the ISO, Julian, Islamic, Hebrew, Mayan (long count, haab, tzolkin), French Revolutionary, and Old Hindu (solar, lunar) calendar dates. Converting dates _from_ any of those calendars is not supported (yet).
+_calcal_ currently only supports converting _Gregorian calendar dates_ into ISO, Julian, Islamic, Hebrew, Mayan (long count, haab, tzolkin), French Revolutionary, and Old Hindu (solar, lunar) dates. Converting dates _from_ any of those calendars is not supported (yet).
 
 Using the calendrical functions implemented in [_libcalendar_](https://github.com/staudtlex/libcalendar), note that:
 - for dates before 1 January 1 (Gregorian), _calcal_ may return incorrect ISO and Julian dates
