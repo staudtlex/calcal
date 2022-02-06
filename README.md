@@ -66,7 +66,11 @@ Usage of calcal:
 _calcal_ currently only supports converting _Gregorian calendar dates_ into ISO, Julian, Islamic, Hebrew, Mayan (long count, haab, tzolkin), French Revolutionary, and Old Hindu (solar, lunar) dates. Converting dates _from_ any of those calendars is not supported (yet).
 
 Using the calendrical functions implemented in [_libcalendar_](https://github.com/staudtlex/libcalendar), note that:
+
 - for dates before 1 January 1 (Gregorian), _calcal_ may return incorrect ISO and Julian dates
+
 - for dates before the beginning of the Islamic calendar (16 July 622 Julian/19 July 622 Gregorian), _calcal_ returns an invalid Islamic date (currently displayed as "`0  0`" on stdout)
+
 - for dates before the beginning of the French Revolutionary calendar calendar (22 September 1792), _calcal_ returns an invalid French date (currently displayed as "`0   an 0`")
+
 - Old Hindu (solar and lunar) calendar dates may be off by one day
