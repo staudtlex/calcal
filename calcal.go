@@ -148,7 +148,7 @@ func main() {
 	parsedDate, err := parseDate(date)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Invalid date. Specify date as yyyy-mm-dd.\n")
-		return
+		os.Exit(1)
 	}
 
 	// get absolute (fixed) date from Gregorian date
