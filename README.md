@@ -6,17 +6,20 @@ _calcal_ is a command line application that computes and converts dates from 11 
 For the calendrical computations, _calcal_ uses the functions implemented in the Go package [_libcalendar_](https://github.com/staudtlex/libcalendar). For a discussion of the original functions and Lisp code (upon which _libcalendar_ is based), see [Dershowitz, Nachum, and Edward Reingold. 1990. "Calendrical Calculations", Software - Practice and Experience, 20 (9), 899-928](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.4274) and [Reingold, Edward, Nachum Dershowitz, and Stewart Clamen. 1993. "Calendrical Calculations, II: Three Historical Calendars", Software - Practice & Experience, 23 (4), 383-404.](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.9215)
 
 ## Installing
-```
+```sh
 go install staudtlex.de/calcal@latest
 ```
+
 Alternatively,
-```
+
+```sh
 git clone staudtlex.de/calcal calcal && cd calcal && go install
 ```
 
 ## Usage
 To compute the dates corresponding to the current date (e.g. 2022-01-12), simply run `calcal` on the command line.
-```
+
+```text
 $ calcal
 Please note:
 - for dates before 1 January 1 (Gregorian), calcal may return incorrect
@@ -39,8 +42,10 @@ French Revolutionary    23 Nivôse an 230
 Old Hindu Solar         28 Dhanus 5122                  
 Old Hindu Lunar         10 Pausha 5122        
 ```
+
 Run `calcal -h` to show all available options.
-```
+
+```text
 $ calcal -h
 Usage of calcal:
   -c string
